@@ -5,15 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        li {
+            list-style-type: none;
+            margin-left: 20px;
+            color: green;
+        }
+    </style>
+    <script>
+        window.onload = function() {
+            const moneyButton = document.getElementById("money");
+            moneyButton.addEventListener("click", ()=>{
+            console.log("test");
+            alert('조회없음');
+            })
+        }
+
+    </script>
 </head>
 <body>
-    <article>
-        <header>
-          <h1>A heading here</h1>
-          <p>Posted by John Doe</p>
-          <p>Some additional information here</p>
-        </header>
-        <p>Lorem Ipsum dolor set amet....</p>
-      </article>
+    <section>
+        <ul style="display:flex; border: 3px solid green">
+            <li>메일</li>
+            <li>카페</li>
+            <li>블로그</li>
+            <li>지식인</li>
+            <li>쇼핑</li>
+        </ul>
+        <button id="money">조회하기</button>
+    </section>
 </body>
 </html>
